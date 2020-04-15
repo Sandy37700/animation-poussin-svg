@@ -1,0 +1,71 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+
+}
+  
+svg{
+    width: 500px;
+} 
+
+#music1{
+   animation: music ease 3s infinite;
+}
+#music2{
+    animation: music ease 5s infinite;
+ }
+
+@keyframes music{
+    from{
+           transform: rotateZ(-50%);
+    }to{
+           transform: rotateZ(50%)
+    }
+}
+ #poussin {
+    animation: poussin 3s infinite alternate ease;
+    transform-origin: bottom;
+    transform-box: fill-box;
+ }
+  
+
+@keyframes poussin{
+    from{
+        transform: rotateZ(-15deg);
+    }to{
+        transform: rotateZ(15deg);
+    }
+}
+#fleurs{
+    animation: fleurs 3s infinite;
+}
+
+@keyframes fleurs{
+    from{
+           fill: darkorange;
+    }to{   
+           fill: rgb(201, 45, 154);
+
+    }
+
+   
+}
+
+#soleil{
+    animation: soleil 3s infinite;
+}
+@keyframes soleil{
+    from{
+        fill: chartreuse;
+    }to{
+        fill: darkgreen;
+    }
+    
+}
+
+
+
+    
+
